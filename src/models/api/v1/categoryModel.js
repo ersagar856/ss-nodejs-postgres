@@ -2,7 +2,6 @@ const pool = require("../../../db/index.js");
 
 exports.getCategoryWithTags = async (limit, offset, categoryId) => {
   const client = await pool.connect();
-
   try {
     let sql = `
         SELECT 

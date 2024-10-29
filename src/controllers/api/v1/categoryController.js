@@ -82,7 +82,7 @@ exports.getCategoryList = async (req, res) => {
           return res.status(200).json({
             success: true,
             total_count, 
-            categories: formattedResponse, 
+            categories: formattedResponse, // Actual category data with formatted tags
           });
     } else {
       return res.status(404).json({ message: "No categories found." });
